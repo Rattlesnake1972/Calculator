@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="calculator">
+        <div class="calculator_top">
+            <div class="calculator_heading">
+                <h1 class="calculator_title">InCa v.1.1</h1>
+            </div>
+
+            <div class="calculator_sun-container">
+                <div class="calculator_sub-battery"></div>
+            </div>
+        </div>
+
+        <div class="calculator_screen-container">
+            <input type="text" class="calculator_screen" placeholder="0" disabled>
+        </div>
+
+        <p>Inox steel calculator made by DGY</p>
+        
+
+        <div>
+            <button id="buttOnOff" onclick="toggleCalculator()">ON/OFF</button>
+            
+        </div> <br>
+
+        
+        
+
+        <div class="sciButtons">
+
+            <span>
+                <small>MS</small>
+                <small>MR</small>
+                <small>MC</small>
+                <small>M+</small>
+                <small>M-</small>
+                
+            </span>
+
+            <span>
+                <button onclick="memoryStore()">MS</button>
+                <button onclick="memoryRecall()">MR</button>
+                <button onclick="memoryClear()">MC</button>
+                <button onclick="memoryAdd()">M+</button>
+                <button onclick="memorySubtract()">M-</button>
+            </span>
+
+            
+            
+            <span>
+                <small>x<sup>2</sup></small>
+                <small>x<sup>3</sup></small>
+                <small>x<sup>4</sup></small>
+                <small>x<sup>5</sup></small>
+                <small>x<sup>6</sup></small>
+                <small>x<sup>7</sup></small>
+            </span>
+
+            <span>
+                <button class="button pow" onclick="square()">x<sup>2</sup></button>
+                <button onclick="cube()">x<sup>3</sup></button>
+                <button onclick="power(4)">x<sup>4</sup></button>
+                <button onclick="power(5)">x<sup>5</sup></button>
+                <button onclick="power(6)">x<sup>6</sup></button>
+                <button onclick="power(7)">x<sup>7</sup></button>
+            </span>
+
+            <span>
+                <small>x<sup>9</sup></small>
+                <small>log</small>
+                <small>In</small>
+                <small>e</small>
+                <small>cot</small>
+                <small>cotx</small>
+            </span>
+
+            <span>
+                <button onclick="power(9)">x<sup>9</sup></button>
+                <button onclick="log()">log</button>
+                <button onclick="ln()">ln</button>
+                <button onclick="e()">e</button>
+                <button onclick="cot()">cot</button>
+                <button onclick="cotx()">cotx</button>
+            </span>
+
+            <span>
+                <small>asinh</small>
+                <small>asin</small>
+                <small>sinh</small>
+                <small>sin</small>
+                <small>cos</small>
+                <small>cosh<small>
+            </span>
+
+            <span>
+                <button onclick="asinh()">asinh</button>
+                <button onclick="asin()">asin</button>
+                <button onclick="sinh()">sinh</button>
+                <button onclick="sin()">sin</button>
+                <button onclick="cos()">cos</button>
+                <button onclick="cosh()">cosh</button>
+            </span>
+
+            <span>
+                <small>acos</small>
+                <small>acosh</small>
+                <small>tan</small>
+                <small>tanh</small>
+                <small>atan</small>
+                <small>atanh<small>
+            </span>
+
+            <span>
+                <button onclick="acos()">acos</button>
+                <button onclick="acosh()">acosh</button>
+                <button onclick="tan()">tan</button>
+                <button onclick="tanh()">tanh</button>
+                <button onclick="atan()">atan</button>
+                <button onclick="atanh()">atanh</button>
+            </span>
+
+            <span>
+                <small>x<sup>8</sup></small>
+                <small>x<sup>y</sup></small>
+                <small>√</small>
+                <small>3<sub>√</sub></small>
+            </span>
+
+            <span>
+                <button onclick="power(8)">x<sup>8</sup></button>
+                <button onclick="power1()">x<sup>y</sup></button>
+                <button onclick="squareRoot()">√</button>
+                <button onclick="cubeRoot()">3<sub>√</sub></button>
+            </span><br>
+
+        </div>
+
+        <div class="calculator_keyboard">
+            <button class="button clear allClear">AC</button>
+            <button class="button clear delete">DEL</button>
+            <button class="button parcent">%</button>
+            <button class="button operatorBtn">&divide</button>
+
+            <button class="button num">7</button>
+            <button class="button num">8</button>
+            <button class="button num">9</button>
+            <button class="button operatorBtn">&times</button>
+
+            <button class="button num">4</button>
+            <button class="button num">5</button>
+            <button class="button num">6</button>
+            <button class="button operatorBtn minus">-</button>
+
+            <button class="button num">1</button>
+            <button class="button num">2</button>
+            <button class="button num">3</button>
+            <button class="button operatorBtn">+</button>
+
+            <button class="button num">0</button>
+            <button class="button num">00</button>
+            <button class="button dot" onclick="handleDecimal()">.</button>
+            <button class="button equalBtn">=</button>
+            
+
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+    
+</body>
+</html>
